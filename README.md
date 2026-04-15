@@ -119,7 +119,7 @@ python -m code.main \
 
 This process will be terminated either when the target model's robustness has not improved for a maximum number of epochs `--patience` or when the maximum number of epochs `--epochs` is reached. The model checkpoints will be saved under the the folder specified by `--model_dir`.
 
-Feel free to adjust the arguments to implement AdvFLYP under different training settings. You can also directly edit `train.sh` and run `bash train.sh`.
+Feel free to adjust the arguments to implement AdvFLYP under different training settings. You can also directly edit `train.sh` and run `bash scripts/train.sh`.
 
 #### Argument description: ####
 
@@ -161,7 +161,7 @@ python -m code.main \
     --batch_size 256 \
     --test_attack_type $TEST_ATTACK_TYPE --test_eps $TEST_EPS --test_numsteps $TEST_NUMSTEPS --test_stepsize $TEST_STEPSIZE
 ```
-Alternatively, directly run `bash test.sh` under the project folder.
+Alternatively, directly run `bash scripts/test.sh` under the project folder.
 
 #### Argument description: ####
 
