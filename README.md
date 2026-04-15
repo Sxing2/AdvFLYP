@@ -159,7 +159,7 @@ python -m code.main \
     --root ./data
     --resume $TEST_MODEL_PATH --test_set "${TEST_SET[@]}" \
     --batch_size 256 \
-    --test_attack_type $TEST_ATTACK_TYPE --test_eps $TEST_EPS --test_numsteps $TEST_NUMSTEPS --test_stepsize $TEST_STEPSIZE
+    --test_attack_type pgd --test_eps 1 --test_numsteps 10 --test_stepsize 1
 ```
 Alternatively, directly run `bash scripts/test.sh` under the project folder.
 
