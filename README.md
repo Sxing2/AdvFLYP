@@ -37,7 +37,7 @@ Figure 1: Overview of our AdvFLYP paradigm.
 ## 🚧 To-Do
 
 - [x] Release code
-- [x] Release dataset
+- [x] Release training data
 - [x] Add training/eval scripts
 - [x] Add README
 - [ ] Provide model checkpoints (coming soon)
