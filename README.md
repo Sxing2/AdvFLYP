@@ -135,26 +135,26 @@ Feel free to adjust the arguments to implement AdvFLYP under different training 
 | Argument | Description |
 | --- | --- |
 | --root | Root path to raw data (for training and evaluation). Specify your path to `./AdvFLYP/data` |
-| --batch_size | Batch size during AFT (256).|
-| --epochs | Number of epochs (100). |
-| --patience | Number of epochs without improvement before halting (10). |
-| --learning_rate | Learning rate (1e-4). |
+| --batch_size | Batch size during AFT (`256`).|
+| --epochs | Number of epochs (`100`). |
+| --patience | Number of epochs without improvement before halting (`10`). |
+| --learning_rate | Learning rate (`1e-4`). |
 | --dataset | Data on which to finetune CLIP (`smallLAION`). |
-| --n_data | Number of training data to use (1000000). |
+| --n_data | Number of training data to use (`1000000`). |
 | --reg_level | Regularisation level (`[logit feat]`). |
-| --lambda_feat | Regularisation weight for feature level (1.0) |
-| --lambda_logit | Regularisation weight for logit level (1.0) |
+| --lambda_feat | Regularisation weight for feature level (`1.0`) |
+| --lambda_logit | Regularisation weight for logit level (`1.0`) |
 | --model_dir | Directory to save checkpoints into (`./save_AdvFLYP`). Will be created if not already existing. |
 | --name | A tag for the checkpoints during the current run (`AdvFLYP_full`). |
 | --train_attack_type | Attack method during finetuning (`pgd`). |
-| --train_eps | Attack strength during finetuning (1.0). Will be divided by 256 in the run. |
-| --train_numsteps | Number of iterative steps for creating adversarial attacks during finetuning (2). |
-| --train_stepsize | Stepsize when creating adversarial perturbations during finetuning (1.0). Will be divided by 256 in the run. |
+| --train_eps | Attack strength during finetuning (`1.0`). Will be divided by 256 in the run. |
+| --train_numsteps | Number of iterative steps for creating adversarial attacks during finetuning (`2`). |
+| --train_stepsize | Stepsize when creating adversarial perturbations during finetuning (`1.0`). Will be divided by 256 in the run. |
 | --eval_set | Evaluation set after each epoch (`tinyImageNet`). |
 | --test_attack_type | Attack method during evaluation (`pgd`). |
-| --test_eps | Attack strength during evaluation (1.0). Will be divided by 256 in the run. |
-| --test_numsteps | Number of iterative steps for creating adversarial attacks during evaluation (10). |
-| --train_stepsize | Stepsize when creating adversarial perturbations during evaluation (1.0). Will be divided by 256 in the run. |
+| --test_eps | Attack strength during evaluation (`1.0`). Will be divided by 256 in the run. |
+| --test_numsteps | Number of iterative steps for creating adversarial attacks during evaluation (`10`). |
+| --train_stepsize | Stepsize when creating adversarial perturbations during evaluation (`1.0`). Will be divided by 256 in the run. |
 
 ### Evaluation
 
@@ -180,11 +180,11 @@ Alternatively, directly run `bash scripts/test.sh` under the project folder.
 | --root | Root path to raw data (for training and evaluation). Specify your path to `./AdvFLYP/data` 
 | --resume | Path to the model checkpoint to be evaluated. Defaults to the original CLIP if not specified. |
 | --test_set | A list of datasets on which to evaluate the model. |
-| --batch_size | Batch size during evaluation (256).|
+| --batch_size | Batch size during evaluation (`256`).|
 | --test_attack_type | Attack method during evaluation (`pgd`). |
-| --test_eps | Attack strength during evaluation (1.0). Will be divided by 256 in the run. |
-| --test_numsteps | Number of iterative steps for creating adversarial attacks during evaluation (10). |
-| --train_stepsize | Stepsize when creating adversarial perturbations during evaluation (1.0). Will be divided by 256 in the run. |
+| --test_eps | Attack strength during evaluation (`1.0`). Will be divided by 256 in the run. |
+| --test_numsteps | Number of iterative steps for creating adversarial attacks during evaluation (`10`). |
+| --train_stepsize | Stepsize when creating adversarial perturbations during evaluation (`1.0`). Will be divided by 256 in the run. |
 
 
 ## Citation
