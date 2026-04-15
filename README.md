@@ -176,3 +176,30 @@ Alternatively, directly run `bash test.sh` under the project folder.
 | --test_eps | Attack strength during evaluation (1.0). Will be divided by 256 in the run. |
 | --test_numsteps | Number of iterative steps for creating adversarial attacks during evaluation (10). |
 | --train_stepsize | Stepsize when creating adversarial perturbations during evaluation (1.0). Will be divided by 256 in the run. |
+
+
+## Citation
+
+If you find this repo useful, please cite our work:
+
+```
+@article{xing2026finetune,
+  title={Finetune Like You Pretrain: Boosting Zero-shot Adversarial Robustness in Vision-language Models},
+  author={Xing, Songlong and Wang, Weijie and Zhao, Zhengyu and Gu, Jindong and Torr, Philip and Sebe, Nicu},
+  journal={arXiv preprint arXiv:2212.07016},
+  year={2026}
+}
+```
+
+## Acknowledgement
+
+Our code is developed based on the open-sourced code of [TeCoA](https://github.com/cvlab-columbia/ZSRobust4FoundationModel). We thank the authors for their work. Please also consider citing their paper:
+
+```
+@inproceedings{maounderstanding,
+  title={Understanding Zero-shot Adversarial Robustness for Large-Scale Models},
+  author={Mao, Chengzhi and Geng, Scott and Yang, Junfeng and Wang, Xin and Vondrick, Carl},
+  booktitle={The Eleventh International Conference on Learning Representations},
+  year={2023}
+}
+```
