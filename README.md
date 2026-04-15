@@ -24,6 +24,7 @@ Figure 1: Overview of our AdvFLYP paradigm.
 
 ## Table of Contents
 
+- [To-do](#-to-do)
 - [Abstract](#abstract)
 - [Software Requirements](#software-requirements)
 - [Dataset Preparation](#dataset-preparation)
@@ -32,6 +33,14 @@ Figure 1: Overview of our AdvFLYP paradigm.
   - [2. Evaluation](#evaluation)
 - [Citation](#citation)
 - [Acknowledgement](#acknowledgement)
+
+## 🚧 To-Do
+
+- [x] Release code
+- [x] Release dataset
+- [x] Add training/eval scripts
+- [x] Add README
+- [ ] Provide model checkpoints (coming soon)
 
 ## Abstract
 
