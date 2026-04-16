@@ -79,7 +79,7 @@ python download_data.py
 Unzip the file `LAION_small.tar.gz`, and you will get the training data folder `./data/laion_samples_small/part0...part9`. The training data is divided into 10 partitions (subfolders) named from `part0` to `part9`, each containing 100k data. Each subfolder contains two child subfolders `partX/images` and `partX/captions`, which contain images and texts, respectively. Within each partition (subfolder) `partX`, an image and a text that share the same filename form a positive pair.
 For instance, `data/laion_samples_small/part0/images/000001.jpg` and `data/laion_samples_small/part0/captions/000001.txt` are one matching pair.
 
-We also provide at [this link](https://drive.google.com/file/d/15CVV9GhouCSBoa70L_Z2U_MFmrCe-XHE/view?usp=drive_link) (132MB) a JSON file `laion_index.json` that contains paths to the images and texts for faster data loading. It is recommended to download this file and place it under the training data folder `data/laion_samples_small`.
+We also provide at [this link](https://drive.google.com/file/d/15CVV9GhouCSBoa70L_Z2U_MFmrCe-XHE/view?usp=drive_link) (108MB) a JSON file `laion_index.json` that contains paths to the images and texts for faster data loading. It is recommended to download this file and place it under the training data folder `data/laion_samples_small`.
 You can use the following command to download this file:
 ```bash
 python -c "url='https://drive.google.com/uc?id=1l1RH6xeNcFCIUvdFWxWjZT79QB3uIasT'; output='./data/laion_samples_small/laion_index.json'; import gdown; gdown.download(url, output, quiet=False)"
