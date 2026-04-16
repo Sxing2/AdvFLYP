@@ -195,7 +195,7 @@ If you find this repo useful, please cite our work:
 @article{xing2026finetune,
   title={Finetune Like You Pretrain: Boosting Zero-shot Adversarial Robustness in Vision-language Models},
   author={Xing, Songlong and Wang, Weijie and Zhao, Zhengyu and Gu, Jindong and Torr, Philip and Sebe, Nicu},
-  journal={arXiv preprint arXiv:2212.07016},
+  journal={arXiv preprint arXiv:2604.11576},
   year={2026}
 }
 ```
