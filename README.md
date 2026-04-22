@@ -40,7 +40,8 @@ Figure 1: Overview of our AdvFLYP paradigm.
 - [x] Release training data
 - [x] Add training/eval scripts
 - [x] Add README
-- [ ] Provide model checkpoints (coming soon)
+- [x] Provide model checkpoints (22 April 2026, refer to [Evaluation](#evaluation))
+- [ ] Release model checkpoints on Huggingface (coming soon)
 
 ## Abstract
 
@@ -171,6 +172,20 @@ python -m code.main \
     --test_attack_type pgd --test_eps 1 --test_numsteps 10 --test_stepsize 1
 ```
 Alternatively, directly run `bash scripts/test.sh` under the project folder.
+
+We also provide the model checkpoints for [AdvFLYP (w/o regularisation)](https://drive.google.com/file/d/1DQ509vJpwjwlxLKrGVgvwum8-vW1zy0K/view?usp=sharing) and [AdvFLYP (w/ regularisation)](https://drive.google.com/file/d/111dTcolTdPB93Gg8Fwj_MmNuC77zHQmm/view?usp=sharing). Please download these checkpoints, specify the `--resume` argument to the path to the checkpoint, and evaluate the model using the command above. Use the following commands to download our checkpoints:
+
+For **non-regularised AdvFLYP** checkpoint:
+
+```bash
+python -c "import gdown; output='./AdvFLYP_NonReg_checkpoint.pth.tar'; FID='1DQ509vJpwjwlxLKrGVgvwum8-vW1zy0K'; url=f'https://drive.google.com/uc?id={FID}'; gdown.download(url, output, quiet=False)"
+```
+
+For **regularised AdvFLYP** ($\textrm{AdvFLYP}_{full}$ in the paper) checkpoint:
+
+```bash
+python -c "import gdown; output='./AdvFLYP_full_checkpoint.pth.tar'; FID='111dTcolTdPB93Gg8Fwj_MmNuC77zHQmm'; url=f'https://drive.google.com/uc?id={FID}'; gdown.download(url, output, quiet=False)"
+```
 
 #### Argument description: ####
 
