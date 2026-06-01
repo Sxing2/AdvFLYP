@@ -207,11 +207,13 @@ python -c "import gdown; output='./AdvFLYP_full_checkpoint.pth.tar'; FID='111dTc
 If you find this repo useful, please cite our work:
 
 ```
-@article{xing2026finetune,
-  title={Finetune Like You Pretrain: Boosting Zero-shot Adversarial Robustness in Vision-language Models},
-  author={Xing, Songlong and Wang, Weijie and Zhao, Zhengyu and Gu, Jindong and Torr, Philip and Sebe, Nicu},
-  journal={arXiv preprint arXiv:2604.11576},
-  year={2026}
+@InProceedings{Xing_2026_CVPR,
+    author    = {Xing, Songlong and Wang, Weijie and Zhao, Zhengyu and Gu, Jindong and Torr, Philip and Sebe, Nicu},
+    title     = {Finetune Like You Pretrain: Boosting Zero-shot Adversarial Robustness in Vision-language Models},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Findings},
+    month     = {June},
+    year      = {2026},
+    pages     = {737-747}
 }
 ```
 
