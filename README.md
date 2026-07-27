@@ -41,7 +41,7 @@ Figure 1: Overview of our AdvFLYP paradigm.
 - [x] Add training/eval scripts
 - [x] Add README
 - [x] Provide model checkpoints (22 April 2026, refer to [Evaluation](#evaluation))
-- [ ] Release model checkpoints on Huggingface (coming soon)
+- [x] Release model checkpoints on [Hugging Face](https://huggingface.co/xingslong/AdvFLYP)
 
 ## Abstract
 
@@ -173,7 +173,17 @@ python -m code.main \
 ```
 Alternatively, directly run `bash scripts/test.sh` under the project folder.
 
-We also provide the model checkpoints for [AdvFLYP (w/o regularisation)](https://drive.google.com/file/d/1DQ509vJpwjwlxLKrGVgvwum8-vW1zy0K/view?usp=sharing) and [AdvFLYP (w/ regularisation)](https://drive.google.com/file/d/111dTcolTdPB93Gg8Fwj_MmNuC77zHQmm/view?usp=sharing). Please download these checkpoints, specify the `--resume` argument to the path to the checkpoint, and evaluate the model using the command above. Use the following commands to download our checkpoints:
+We also provide the model checkpoints for [AdvFLYP (w/o regularisation)](https://huggingface.co/xingslong/AdvFLYP/blob/main/AdvFLYP_NonReg_checkpoint.pth.tar) and [AdvFLYP (w/ regularisation)](https://huggingface.co/xingslong/AdvFLYP/blob/main/AdvFLYP_full_checkpoint.pth.tar) on [Hugging Face](https://huggingface.co/xingslong/AdvFLYP). Please download these checkpoints, specify the `--resume` argument to the path to the checkpoint, and evaluate the model using the command above.
+
+Download the checkpoints from Hugging Face:
+
+```bash
+pip install -U huggingface_hub
+hf download xingslong/AdvFLYP AdvFLYP_NonReg_checkpoint.pth.tar --local-dir .
+hf download xingslong/AdvFLYP AdvFLYP_full_checkpoint.pth.tar --local-dir .
+```
+
+The original Google Drive releases remain available as mirrors. Use the following commands to download them:
 
 For **non-regularised AdvFLYP** checkpoint:
 
